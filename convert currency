@@ -1,0 +1,70 @@
+
+#include<iostream>
+using namespace std;
+#include<conio.h>
+int main()
+{
+  float dollar, inr, rupees;
+  int ch;
+   do
+   {
+   cout<<"\n\n***** WelCome to Currency Converter *****";
+   cout<<"\n\n 1.Rupees -> Dollar";
+   cout<<"\n\n 2.Dollar -> Ruppes";
+   cout<<"\n\n 3.Pound -> Ruppes";
+   cout<<"\n\n 4.Euro -> Ruppes";
+   cout<<"\n\n 5.Kuwaiti Dinar -> Ruppes";
+   cout<<"\n\n 6.Nepali ruppes -> Ruppes";
+   cout<<"\n\n 7. Exit";
+   cout<<"\n\nEnter your choice = ";
+   cin>>ch;
+   
+   switch(ch)
+    {
+    case 1:
+          cout<<"\n\nEnter the currency in Rupees = ";
+          cin>>rupees;
+          dollar=rupees/76.53;
+          cout<<"\n\nThe currency in dollar is = "<<" "<< dollar<<"$";
+          break;
+    case 2:
+          cout<<"\n\nEnter the currency in Dollar = ";
+          cin>>rupees;
+          inr=rupees*76.53;
+          cout<<"\n\nThe currency in Ruppes is = "<<" "<<inr<<"rs";
+           break;
+    case 3:
+           cout<<"\n\nEnter the currency in Pound = ";
+           cin>>rupees;
+           inr=rupees*98.24;
+           cout<<"\n\nThe currency in Ruppes is = "<<" "<<inr<<"rs";
+           break;
+    case 4: 
+           cout<<"\n\nEnter the currency in Euro = ";
+           cin>>rupees;
+           inr=rupees*82.53;
+           cout<<"\n\nThe currency in Ruppes is = "<<" "<<inr<<"rs";
+           break;
+    case 5:
+           cout<<"\n\nEnter the currency in Kuwaiti Dinar = ";
+           cin>>rupees;
+           inr=rupees*250.51;
+           cout<<"\n\nThe currency in Ruppes is = "<<" "<<inr<<"rs";
+            break;
+    case 6:
+           cout<<"\n\nEnter the currency in Nepali ruppes = ";
+           cin>>rupees;
+           inr=rupees*0.63;
+           cout<<"\n\nThe currency in Ruppes is = "<<" "<<inr<<"rs";
+            break;
+    case 7:
+           exit(0);
+    default:
+           cout<<"\nYou Enter incorrect option choose 1 to 6";
+    }
+  }
+while(ch<7);
+
+}
+
+
